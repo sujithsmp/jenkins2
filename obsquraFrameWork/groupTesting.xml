@@ -1,0 +1,17 @@
+<suite name="suite">
+	<test name="ChromeTest">
+		<groups>
+			<run>
+				<include name="regression" />
+				<include name="sanity" />
+				<!--exlude name="high" />-->
+			</run>
+		</groups>
+		<classes>
+			<class name="testJava.ClientPageTestCases" />
+			<class name="testJava.WorkersPageTest" />
+			<class name="testJava.LoginTestCases" />
+			<class name="testJava.MainPageTestCases" />
+		</classes>
+	</test>
+</suite>

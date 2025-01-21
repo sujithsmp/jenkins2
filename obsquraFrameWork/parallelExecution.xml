@@ -1,0 +1,15 @@
+<suite name="suites" thread-count="5" parallel="test">
+	<test name="chrome">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="testJava.LoginTestCases" />
+		</classes>
+	</test>
+	
+	<test name="edge">
+	<parameter name="browser" value="edge"/>
+		<classes>
+			<class name="testJava.LoginTestCases" />
+		</classes>
+	</test>
+</suite>
