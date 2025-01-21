@@ -1,15 +1,20 @@
 <suite name="suites" thread-count="5" parallel="test">
+	<listeners>
+		<listener class-name="utilities.ExtentReportUtility" />
+	</listeners>
 	<test name="chrome">
-	<parameter name="browser" value="chrome"/>
+		<groups>
+			<run>
+				<include name="regression" />
+				<include name="sanity" />
+				<!--exlude name="high" />-->
+			</run>
+		</groups>
+		<parameter name="browser" value="chrome" />
+		<parameter name="os" value="windows" />
 		<classes>
-			<class name="testJava.LoginTestCases" />
-		</classes>
-	</test>
-	
-	<test name="edge">
-	<parameter name="browser" value="edge"/>
-		<classes>
-			<class name="testJava.LoginTestCases" />
+
+			<class name="testJava.MainPageTestCases" />
 		</classes>
 	</test>
 </suite>

@@ -23,10 +23,12 @@ public class ScreenshotUtility {
 		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());// date time capture using
 		// java
 
-		File finalDestination = new File(
-		System.getProperty("user.dir") + "\\OutputScreenshots\\" + name + "_" + timeStamp + ".png");
+		String targetFilePath=System.getProperty("user.dir") + "\\OutputScreenshots\\" + name + "_" + timeStamp + ".png";
+		File finalDestination = new File(targetFilePath);
 		//FileHandler.copy(screenShot, finalDestination);// copy screenshot from temp path to project folder
 		screenShot.renameTo(finalDestination);
+		//return targetFilePath;
 		}
+	
 
 }

@@ -3,12 +3,12 @@ package testJava;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
 import constant.Constant;
 import elementRepository.ClientPage;
 import elementRepository.DashBoard;
 //import elementRepository.ClientsPage;
 import elementRepository.LoginPage1;
+import utilities.BaseClass;
 
 public class ClientPageTestCases extends BaseClass {
   @Test(priority=2,groups= {"regression"})

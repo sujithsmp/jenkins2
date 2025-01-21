@@ -3,9 +3,9 @@ package testJava;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
 import elementRepository.DashBoard;
 import elementRepository.LoginPage1;
+import utilities.BaseClass;
 import utilities.DataProviders;
 
 public class LoginAnLogoutTestCases extends BaseClass {

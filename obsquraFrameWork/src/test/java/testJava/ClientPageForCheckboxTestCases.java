@@ -3,10 +3,10 @@ package testJava;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
 import elementRepository.ClientPageForCheckbox;
 //import elementRepository.ClientsPage1;
 import elementRepository.LoginPage1;
+import utilities.BaseClass;
 
 public class ClientPageForCheckboxTestCases extends BaseClass{
   @Test

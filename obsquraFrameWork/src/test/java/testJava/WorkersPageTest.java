@@ -6,10 +6,10 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
 import elementRepository.DashBoard;
 import elementRepository.LoginPage1;
 import elementRepository.WorkersPage;
+import utilities.BaseClass;
 
 public class WorkersPageTest extends BaseClass{
   @Test(priority=3,groups= {"sanity"})

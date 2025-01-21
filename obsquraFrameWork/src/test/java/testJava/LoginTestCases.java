@@ -3,11 +3,11 @@ package testJava;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseClass;
 import elementRepository.DashBoard;
 //import elementRepository.DashboardPage;
 import elementRepository.LoginPage;
 import elementRepository.LoginPage1;
+import utilities.BaseClass;
 
 public class LoginTestCases extends BaseClass {
 	@Test(priority=1,groups= {"sanity"})
